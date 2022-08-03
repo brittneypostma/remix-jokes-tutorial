@@ -1,0 +1,40 @@
+@tailwind base;
+
+body {
+  @apply text-white;
+  background-image: radial-gradient(
+    circle,
+    rgba(152, 11, 238, 1) 0%,
+    rgba(118, 15, 181, 1) 35%,
+    rgba(58, 13, 85, 1) 100%
+  );
+}
+
+h1 {
+  @apply text-3xl font-semibold mb-4;
+}
+
+h2 {
+  @apply text-2xl font-semibold mb-3;
+}
+
+input, textarea {
+  @apply border-2 border-gray-500 rounded-md p-2;
+}
+
+fieldset {
+  @apply border-2 border-gray-300 rounded-md p-2;
+}
+
+form, label {
+  @apply grid grid-cols-1 gap-4;
+}
+
+button, [type="submit"], [type="button"], [type="reset"] {
+  @apply hover:bg-blue-600 bg-blue-500 text-white font-bold py-2 px-4 rounded-md;
+}
+
+
+@tailwind components;
+@tailwind utilities;
+
