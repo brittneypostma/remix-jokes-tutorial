@@ -4,7 +4,15 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      gridTemplateColumns: {
+        'sidebar': '200px 1fr'
+      },
+
+      fontFamily: {
+        'display': ['Baloo', 'sans-serif'],
+      }
+    },
   },
   plugins: [],
 }

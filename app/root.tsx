@@ -30,19 +30,13 @@ export default function App() {
 export function Layout({ children }: { children: React.ReactNode }) {
 	return (
 		<>
-			<nav>
-				<ul className="flex gap-2 m-4 text-lg text-white font-semibold transition-all">
-					<li>
-						<Link to="/" className="hover:border-b-2">
-							Home
-						</Link>
-					</li>
-					<li>
-						<Link to="/jokes" className="hover:border-b-2">
-							Jokes
-						</Link>
-					</li>
-				</ul>
+			<nav className="flex gap-2 m-4 text-lg text-white font-semibold transition-all">
+				<Link to="/" className="hover:underline">
+					Home
+				</Link>
+				<Link to="/jokes" className="hover:underline">
+					Jokes
+				</Link>
 			</nav>
 			{children}
 		</>

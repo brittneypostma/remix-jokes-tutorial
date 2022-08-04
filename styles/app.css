@@ -1,5 +1,12 @@
 @tailwind base;
 
+@font-face {
+  font-family: "baloo";
+  src: url("/fonts/baloo/baloo.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   @apply text-white;
   background-image: radial-gradient(
@@ -11,11 +18,11 @@ body {
 }
 
 h1 {
-  @apply text-3xl font-semibold mb-4;
+  @apply text-3xl font-semibold mb-4 text-yellow-300 font-display;
 }
 
 h2 {
-  @apply text-2xl font-semibold mb-3;
+  @apply text-2xl font-semibold mb-3 text-yellow-300 font-display;
 }
 
 input, textarea {
@@ -30,8 +37,12 @@ form, label {
   @apply grid grid-cols-1 gap-4;
 }
 
-button, [type="submit"], [type="button"], [type="reset"] {
-  @apply hover:bg-blue-600 bg-blue-500 text-white font-bold py-2 px-4 rounded-md;
+button, [type="submit"], [type="button"], [type="reset"], .btn {
+  @apply cursor-pointer inline-flex items-center justify-center font-bold py-1 px-4 appearance-none hover:bg-yellow-400 bg-yellow-500 text-black py-2 px-4 rounded-md;
+}
+
+li::before {
+  content: '🤪'
 }
 
 
